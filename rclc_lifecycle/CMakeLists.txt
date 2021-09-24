@@ -21,7 +21,7 @@ if("${rcl_lifecycle_VERSION}" VERSION_LESS "1.0.0")
 else()
   message(STATUS "Found rcl_lifecycle version ${rcl_lifecycle_VERSION}, which belongs to Foxy or later")
   if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-    add_compile_options(-Wall -Wextra -Wpedantic)
+    add_compile_options(-Wall -Wextra -pedantic)
   endif()
 endif()
 
