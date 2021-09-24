@@ -27,6 +27,11 @@ extern "C"
 /// TODO (jst3si) Where is this defined? - in my build environment this variable is not set.
 // #define ROS_PACKAGE_NAME "rclc"
 
+#ifdef OLD_COMPILER_NO_SUPPORT
+// old compiler defines NONE=(-1). We can't have that here
+#undef NONE
+#endif
+
 /// Enumeration for timer, subscription, guard conditions etc to be waited on.
 typedef enum
 {
