@@ -52,7 +52,7 @@ typedef enum
 
 typedef enum
 {
-  NONE,
+  EXEC_NONE,
   SINGLE_THREADED,
   MULTI_THREADED,
   NON_POSIX,
